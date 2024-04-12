@@ -1,9 +1,12 @@
 {
   "cSpell.words": [
+    "commitlint",
     "linebreak",
     "noninteractive",
     "Parens",
-    "tanstack"
+    "tanstack",
+    "toon",
+    "yarnpkg"
   ],
   "search.exclude": {
     "**/.yarn": true,
