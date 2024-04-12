@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    "aaron-bond.better-comments",
+    "yoavbls.pretty-ts-errors",
+    "usernamehw.errorlens",
+    "eamodio.gitlens",
+    "arcanis.vscode-zipfs",
+    "editorconfig.editorconfig"
+  ]
+}
