@@ -1,6 +1,9 @@
 {
   "cSpell.words": [
-    "Parens"
+    "linebreak",
+    "noninteractive",
+    "Parens",
+    "tanstack"
   ],
   "search.exclude": {
     "**/.yarn": true,
