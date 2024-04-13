@@ -13,7 +13,10 @@
     "settings": {
         "react": {
             "version": "detect"
-        }
+        },
+        "import/resolver": {
+            "typescript": {} // TypeScript 경로 및 설정을 자동으로 인식
+          }
     },
     "plugins": [
         "@typescript-eslint",
@@ -26,6 +29,7 @@
         "airbnb/hooks",
         "plugin:import/errors",
         "plugin:import/warnings",
+        "plugin:import/recommended",
         "plugin:prettier/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",

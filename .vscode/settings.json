@@ -1,11 +1,20 @@
 {
-    "cSpell.words": ["commitlint", "linebreak", "noninteractive", "Parens", "tanstack", "toon", "yarnpkg"],
-    "search.exclude": {
-        "**/.yarn": true,
-        "**/.pnp.*": true
-    },
-    "eslint.nodePath": ".yarn/sdks",
-    "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
-    "typescript.tsdk": ".yarn/sdks/typescript/lib",
-    "typescript.enablePromptUseWorkspaceTsdk": true
+  "cSpell.words": [
+    "commitlint",
+    "linebreak",
+    "noninteractive",
+    "Parens",
+    "tanstack",
+    "toon",
+    "yarnpkg",
+    "zustand"
+  ],
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
