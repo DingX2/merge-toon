@@ -5,9 +5,8 @@ import { exampleModel } from '@/stores';
 import { useCounter } from '@/hooks';
 import { name } from '@/constants';
 import { mod } from '@/utils';
-import './App.css';
 
-export const App: FC = () => {
+export const AppTemplate: FC = () => {
     const { getData, setData } = exampleModel(); // external
     const { increase, decrease } = useCounter(getData());
 
