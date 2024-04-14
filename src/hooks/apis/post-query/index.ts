@@ -1,4 +1,4 @@
-import { useQuery } from '@tanstack/react-query';
+import { useSuspenseQuery } from '@tanstack/react-query';
 import { QUERY_OPTIONS } from '@/constants';
 import { PostRepository } from './repository';
 
@@ -7,7 +7,7 @@ const queryKey = {
 };
 
 export const useGetPost = () => {
-    return useQuery({
+    return useSuspenseQuery({
         queryKey: queryKey.all,
         queryFn: () => PostRepository.getPost(),
         ...QUERY_OPTIONS,

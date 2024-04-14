@@ -5,8 +5,14 @@ import { exampleModel } from '@/stores';
 import { useCounter } from '@/hooks';
 import { name } from '@/constants';
 import { mod } from '@/utils';
+import { Card } from '@/components/molecules';
+import type { Post } from '@/types';
 
-export const AppTemplate: FC = () => {
+interface Props {
+    posts: Post[];
+}
+
+export const AppTemplate: FC<Props> = ({ posts }) => {
     const { getData, setData } = exampleModel(); // external
     const { increase, decrease } = useCounter(getData());
 
@@ -20,6 +26,9 @@ export const AppTemplate: FC = () => {
                 </a>
             </div>
             <h1>Vite + React</h1>
+            {posts.map(({ userId, id, title, completed }) => {
+                return <Card key={id} userId={userId} id={id} title={title} completed={completed} />;
+            })}
             <div className="card">
                 <button type="button" onClick={() => setData(increase)}>
                     count is {mod(getData())}
