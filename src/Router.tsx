@@ -1,4 +1,5 @@
 import type { FC } from 'react';
+import { Suspense } from 'react';
 import { Outlet, RouterProvider, createRouter, createRoute, createRootRoute } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import { App } from '@/pages';
@@ -19,7 +20,11 @@ const routeTree = rootRoute.addChildren([
         getParentRoute: () => rootRoute,
         path: '/',
         component() {
-            return <App />;
+            return (
+                <Suspense fallback={<App.Loading />}>
+                    <App />
+                </Suspense>
+            );
         },
     }),
     createRoute({
